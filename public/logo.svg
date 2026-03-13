@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2a44;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#163a56;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00afaf;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00c6b8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a5c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2a44;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer circle border -->
+  <circle cx="100" cy="100" r="96" fill="url(#circleGrad)" stroke="url(#tealGrad)" stroke-width="2.5"/>
+
+  <!-- Circuit dots top -->
+  <circle cx="100" cy="12" r="3" fill="#00c6b8"/>
+  <circle cx="76"  cy="18" r="2" fill="#00afaf" opacity="0.7"/>
+  <circle cx="124" cy="18" r="2" fill="#00afaf" opacity="0.7"/>
+
+  <!-- Circuit lines top -->
+  <line x1="100" y1="15" x2="100" y2="34" stroke="#00c6b8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="76"  y1="20" x2="76"  y2="34" stroke="#00afaf" stroke-width="1"   opacity="0.4"/>
+  <line x1="124" y1="20" x2="124" y2="34" stroke="#00afaf" stroke-width="1"   opacity="0.4"/>
+
+  <!-- Circuit dots bottom -->
+  <circle cx="100" cy="188" r="3" fill="#00c6b8"/>
+  <circle cx="76"  cy="182" r="2" fill="#00afaf" opacity="0.7"/>
+  <circle cx="124" cy="182" r="2" fill="#00afaf" opacity="0.7"/>
+
+  <!-- Circuit lines bottom -->
+  <line x1="100" y1="166" x2="100" y2="185" stroke="#00c6b8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="76"  y1="166" x2="76"  y2="180" stroke="#00afaf" stroke-width="1"   opacity="0.4"/>
+  <line x1="124" y1="166" x2="124" y2="180" stroke="#00afaf" stroke-width="1"   opacity="0.4"/>
+
+  <!-- Circuit dots left/right -->
+  <circle cx="12"  cy="100" r="3" fill="#00c6b8"/>
+  <circle cx="188" cy="100" r="3" fill="#00c6b8"/>
+  <line x1="15"  y1="100" x2="34"  y2="100" stroke="#00c6b8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="166" y1="100" x2="185" y2="100" stroke="#00c6b8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- BTS text -->
+  <text
+    x="100" y="118"
+    font-family="Arial Black, sans-serif"
+    font-size="56"
+    font-weight="900"
+    fill="url(#tealGrad)"
+    text-anchor="middle"
+    letter-spacing="2"
+  >BTS</text>
+
+  <!-- Underline accent -->
+  <rect x="50" y="126" width="100" height="2.5" rx="1.5" fill="url(#tealGrad)" opacity="0.7"/>
+
+  <!-- Small circuit nodes on the BTS underline -->
+  <circle cx="50"  cy="127" r="3" fill="#00c6b8"/>
+  <circle cx="150" cy="127" r="3" fill="#00c6b8"/>
+  <circle cx="100" cy="127" r="2" fill="#00afaf" opacity="0.8"/>
+</svg>
