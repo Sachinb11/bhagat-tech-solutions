@@ -51,16 +51,16 @@ export async function POST(request) {
 
     /* ── Insert into Supabase ── */
     const { data, error } = await supabase
-      .from('reviews')
-      .insert([{
-        name:     name.trim(),
-        company:  company.trim(),
-        rating:   Number(rating),
-        message:  message.trim(),
-        approved: false,
-      }])
-      .select('id, submitted_at')
-      .single();
+  .from('reviews')
+  .insert([{
+    name: name.trim(),
+    company: company.trim(),
+    rating: Number(rating),
+    review: message.trim(), // change here
+    approved: false,
+  }])
+  .select('id, submitted_at')
+  .single();
 
     if (error) {
       console.error('Supabase insert error:', error.message);
